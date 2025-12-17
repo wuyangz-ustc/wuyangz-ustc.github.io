@@ -1,1 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>张午阳 | 个人主页</title>
+  <style>
+    :root{
+      --blue:#1a66cc;
+      --text:#111;
+      --muted:#333;
+      --maxw: 1100px;
+    }
+    *{ box-sizing: border-box; }
+    body{
+      margin:0;
+      background:#fff;
+      color:var(--text);
+      /* 接近学术主页的“宋体/衬线”观感 */
+      font-family: "Times New Roman", "Noto Serif CJK SC", "Songti SC", "SimSun", serif;
+      line-height: 1.55;
+    }
+    a{ color:var(--blue); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .container{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 28px 22px 60px;
+    }
+
+    .name{
+      text-align:center;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 4px 0 18px;
+      letter-spacing: 1px;
+    }
+
+    .top{
+      display:flex;
+      align-items:flex-start;
+      gap: 26px;
+    }
+    .left{
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .right{
+      flex: 0 0 260px;
+      display:flex;
+      justify-content:flex-end;
+    }
+
+    .info{
+      font-size: 18px;
+      color: var(--blue);
+      margin-top: 2px;
+    }
+    .info .row{
+      margin: 6px 0;
+    }
+    .info strong{
+      font-weight: 700;
+    }
+    .lab{
+      color: var(--text);
+      margin-top: 8px;
+      font-size: 18px;
+    }
+
+    .photo{
+      width: 240px;
+      height: 300px;
+      object-fit: cover;
+      border: 1px solid #222;
+      background: #f5f5f5;
+    }
+
+    .bio{
+      margin-top: 26px;
+      font-size: 19px;
+      color: var(--text);
+      text-align: justify;
+    }
+
+    .section-title{
+      margin-top: 28px;
+      font-size: 18px;
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    /* 论文列表：学术风格的悬挂缩进 */
+    ol.pubs{
+      margin: 10px 0 0 0;
+      padding-left: 28px;
+      font-size: 18px;
+      color: var(--text);
+    }
+    ol.pubs li{
+      margin: 16px 0;
+      padding-left: 6px;
+    }
+    .pub{
+      display:block;
+      text-indent: 0;
+    }
+
+    /* 分隔留白更像截图 */
+    .spacer{ height: 6px; }
+
+    /* 移动端：上下排列 */
+    @media (max-width: 820px){
+      .top{ flex-direction: column; }
+      .right{ justify-content:flex-start; }
+      .photo{ width: 220px; height: 275px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="name">张午阳</div>
+
+    <div class="top">
+      <div class="left">
+        <div class="info">
+          <div class="row"><strong>Email:</strong> <a href="mailto:wuyangz@ustc.edu.cn">wuyangz@ustc.edu.cn</a></div>
+          <div class="row">主要研究方向：高效能AI、机器学习系统、具身智能</div>
+          <div class="row">地址：中科大苏州高等研究院唯真楼410</div>
+          <div class="row lab">
+            实验室介绍：我们在具身智能与自动驾驶前沿突破大模型核心技术，推动大模型在数据、模型、系统与硬件层的协同优化，
+            打通智能系统从理论到场景落地的最后一公里。我们欢迎对大模型、智能系统充满热情的你加入，共同探索智能边界，
+            打造面向未来的智能基础设施！
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <!-- 把你的证件照放到同目录下，命名为 profile.jpg；或改 src 指向你的图片 -->
+        <img class="photo" src="profile.jpg" alt="个人照片" />
+      </div>
+    </div>
+
+    <div class="bio">
+      张午阳，中国科学技术大学人工智能与数据科学学院特任教授。入选国家青年人才项目。2020年获美国罗格斯大学计算机博士学位。
+      曾任美国Meta Staff Research Scientist（2020-2024），负责领导研发大规模机器学习训练管理系统，在异构计算资源调度及大模型产品化应用等方向取得突破性成果。
+      曾任日本东京大学访问学者，曾在字节跳动人工智能实验室、三星美国研究院实习。荣获2020年IEEE Communications Society Phoenix ISS Award。
+    </div>
+
+    <div class="section-title">代表性论文著：</div>
+    <ol class="pubs">
+      <li><span class="pub">Zhang, Wuyang, Zhezhi He, Luyang Liu, Zhenhua Jia, Yunxin Liu, Marco Gruteser, Dipankar Raychaudhuri, and Yanyong Zhang. "Elf: accelerate high-resolution mobile deep vision with content-aware parallel offloading." In Proceedings of the 27th Annual International Conference on Mobile Computing and Networking (MobiCom21), pp. 201-214. 2021.</span></li>
+      <li><span class="pub">Zhang, Wuyang, Sugang Li, Luyang Liu, Zhenhua Jia, Yanyong Zhang, and Dipankar Raychaudhuri. "Hetero-edge: Orchestration of real-time vision applications on heterogeneous edge clouds." In IEEE INFOCOM 2019-IEEE Conference on Computer Communications (INFOCOM19), pp. 1270-1278. IEEE, 2019.</span></li>
+      <li><span class="pub">Ren, Haojie, Wuyang Zhang, Shuyao Shi, Xinran Zhang, Lu Zhang, and Yanyong Zhang. "UniSense: Spatial-Uncertainty-Aware Collaborative Sensing for Autonomous Driving." In Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys25).</span></li>
+      <li><span class="pub">Zhang, Xinran, Hanqi Zhu, Yifan Duan, Wuyang Zhang, Longfei Shangguan, Yu Zhang, Jianmin Ji, and Yanyong Zhang. "Map++: Towards user-participatory visual SLAM systems with efficient map expansion and sharing." In Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom24).</span></li>
+    </ol>
+  </div>
+</body>
+</html>
 
