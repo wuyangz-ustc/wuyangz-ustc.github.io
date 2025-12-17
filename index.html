@@ -54,8 +54,27 @@
 
     .info{
       font-size: 18px;
-      color: var(--blue);
+      color: var(--text);   /* 改成黑色 */
       margin-top: 2px;
+    }
+    
+    /* Email 链接仍保持蓝色（可选：更像传统主页） */
+    .info a{
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .info a:hover{ text-decoration: underline; }
+    
+    /* 会议/期刊高亮（“闪亮”但不刺眼） */
+    .venue{
+      display: inline-block;
+      padding: 1px 8px;
+      margin-left: 6px;
+      border-radius: 999px;
+      font-weight: 800;
+      color: #fff;
+      background: #b00020;
+      line-height: 1.2;
     }
     .info .row{
       margin: 6px 0;
@@ -181,17 +200,27 @@
 
     <div class="section-title">代表性论文著：</div>
     <ol class="pubs">
-      <li><span class="pub">Cheng Yan, Wuyang Zhang, Zhiyuan Ning, Fan Xu, Ziyang Tao, Lu Zhang, Bing Yin, Yanyong Zhang. "Breaking Model Lock-in: Zero-Shot Difficulty-Aware Routing for Cost-Efficient LLM Services." In Proceedings of the 40th Annual AAAI Conference on Artificial Intelligence (AAAI26).</span></li>
-      <li><span class="pub">Hanqi Zhu, Wuyang Zhang, Xinran Zhang, Yu Zhang, Jianmin Ji, Yanyong Zhang. "UrgenGo: Urgency-Aware Transparent GPU Kernel Launching for Autonomous Driving." In Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (MobiCom25).</span></li>
-      <li><span class="pub">Xinran Zhang, Wuyang Zhang, Hanqi Zhu, Yifan Duan, Jianmin Ji, Yanyong Zhang. "PocketMap: An Interaction-Centric 3D Map Serving System for Spatial Understanding on Mobile Devices." Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (UbiCom25).</span></li>
-      <li><span class="pub">Xingchen Li, Wuyang Zhang, Guoliang You, Xiaomeng Chu, Wenhao Yu, Yifan Duan, Yuxuan Xiao, Yanyong Zhang. "CalibWorkflow: A General MLLM-Guided Workflow for Centimeter-Level Cross-Sensor Calibration." In Proceedings of the 33rd ACM International Conference on Multimedia (MM25).</span></li>
-      <li><span class="pub">Haojie Ren, Wuyang Zhang, Shuyao Shi, Xinran Zhang, Lu Zhang, and Yanyong Zhang. "UniSense: Spatial-Uncertainty-Aware Collaborative Sensing for Autonomous Driving." In Proceedings of the 16th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys25).</span></li>
-      <li><span class="pub">Xinran Zhang, Hanqi Zhu, Yifan Duan, Wuyang Zhang, Longfei Shangguan, Yu Zhang, Jianmin Ji, and Yanyong Zhang. "Map++: Towards user-participatory visual SLAM systems with efficient map expansion and sharing." In Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom24).</span></li>
-      <li><span class="pub"> Yang Xu, Yunming Liao, Lun Wang, Hongli Xu, Zhida Jiang, and Wuyang Zhang. "Overcoming noisy labels and non-iid data in edge federated learning." Proceedings of IEEE Transactions on Mobile Computing (TMC24).</span></li>
-      <li><span class="pub"> Lun Wang, Yang Xu, Hongli Xu, Zhida Jiang, Min Chen, Wuyang Zhang, and Chen Qian. "BOSE: Block-wise federated learning in heterogeneous edge computing." Proceedings of IEEE/ACM Transactions on Networking (TON24).</span></li>
-      <li><span class="pub">Wuyang Zhang, Zhezhi He, Luyang Liu, Zhenhua Jia, Yunxin Liu, Marco Gruteser, Dipankar Raychaudhuri, and Yanyong Zhang. "Elf: accelerate high-resolution mobile deep vision with content-aware parallel offloading." In Proceedings of the 27th Annual International Conference on Mobile Computing and Networking (MobiCom21), pp. 201-214. 2021.</span></li>
-      <li><span class="pub">Wuyang Zhang, Sugang Li, Luyang Liu, Zhenhua Jia, Yanyong Zhang, and Dipankar Raychaudhuri. "Hetero-edge: Orchestration of real-time vision applications on heterogeneous edge clouds." In IEEE INFOCOM 2019-IEEE Conference on Computer Communications (INFOCOM19), pp. 1270-1278. IEEE, 2019.</span></li>
+      <li><span class="pub">Cheng Yan, Wuyang Zhang, Zhiyuan Ning, Fan Xu, Ziyang Tao, Lu Zhang, Bing Yin, Yanyong Zhang. "Breaking Model Lock-in: Zero-Shot Difficulty-Aware Routing for Cost-Efficient LLM Services." <span class="venue">AAAI26</span></span></li>
+    
+      <li><span class="pub">Hanqi Zhu, Wuyang Zhang, Xinran Zhang, Yu Zhang, Jianmin Ji, Yanyong Zhang. "UrgenGo: Urgency-Aware Transparent GPU Kernel Launching for Autonomous Driving." <span class="venue">MobiCom25</span></span></li>
+    
+      <li><span class="pub">Xinran Zhang, Wuyang Zhang, Hanqi Zhu, Yifan Duan, Jianmin Ji, Yanyong Zhang. "PocketMap: An Interaction-Centric 3D Map Serving System for Spatial Understanding on Mobile Devices." <span class="venue">UbiCom25</span></span></li>
+    
+      <li><span class="pub">Xingchen Li, Wuyang Zhang, Guoliang You, Xiaomeng Chu, Wenhao Yu, Yifan Duan, Yuxuan Xiao, Yanyong Zhang. "CalibWorkflow: A General MLLM-Guided Workflow for Centimeter-Level Cross-Sensor Calibration." <span class="venue">ACM MM25</span></span></li>
+    
+      <li><span class="pub">Haojie Ren, Wuyang Zhang, Shuyao Shi, Xinran Zhang, Lu Zhang, and Yanyong Zhang. "UniSense: Spatial-Uncertainty-Aware Collaborative Sensing for Autonomous Driving." <span class="venue">MobiSys25</span></span></li>
+    
+      <li><span class="pub">Xinran Zhang, Hanqi Zhu, Yifan Duan, Wuyang Zhang, Longfei Shangguan, Yu Zhang, Jianmin Ji, and Yanyong Zhang. "Map++: Towards user-participatory visual SLAM systems with efficient map expansion and sharing." <span class="venue">MobiCom24</span></span></li>
+    
+      <li><span class="pub">Yang Xu, Yunming Liao, Lun Wang, Hongli Xu, Zhida Jiang, and Wuyang Zhang. "Overcoming noisy labels and non-iid data in edge federated learning." <span class="venue">TMC24</span></span></li>
+    
+      <li><span class="pub">Lun Wang, Yang Xu, Hongli Xu, Zhida Jiang, Min Chen, Wuyang Zhang, and Chen Qian. "BOSE: Block-wise federated learning in heterogeneous edge computing." <span class="venue">TON24</span></span></li>
+    
+      <li><span class="pub">Wuyang Zhang, Zhezhi He, Luyang Liu, Zhenhua Jia, Yunxin Liu, Marco Gruteser, Dipankar Raychaudhuri, and Yanyong Zhang. "Elf: accelerate high-resolution mobile deep vision with content-aware parallel offloading." <span class="venue">MobiCom21</span></span></li>
+    
+      <li><span class="pub">Wuyang Zhang, Sugang Li, Luyang Liu, Zhenhua Jia, Yanyong Zhang, and Dipankar Raychaudhuri. "Hetero-edge: Orchestration of real-time vision applications on heterogeneous edge clouds." <span class="venue">INFOCOM19</span></span></li>
     </ol>
+
     
   </div>
 </body>
